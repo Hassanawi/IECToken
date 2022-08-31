@@ -11,7 +11,7 @@ contract IEC is ERC20, Ownable {
     }
 
     /*
-     *  tokenPrice has been initialised to 1 ether
+     * tokenPrice has been initialised to 1 ether
      */
     
     uint public tokenPrice =1 ether;
