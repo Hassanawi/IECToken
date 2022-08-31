@@ -12,7 +12,7 @@ contract IEC is ERC20, Ownable {
 
     /*
      *  tokenPrice has been initialised to 1 ether
-    */
+     */
     
     uint public tokenPrice =1 ether;
 
@@ -36,6 +36,7 @@ contract IEC is ERC20, Ownable {
      * emits a (TokenMinted) event
      * 
      */
+     
     function mint(address to, uint256 amount) public onlyOwner {
         if(amount<=0) {
          revert AmountCannotBeZero();
@@ -79,6 +80,7 @@ contract IEC is ERC20, Ownable {
      * emits a (TokenPriceUpdate) event
      * 
      */
+     
     function updateIECTokenPrice(uint _tokenPrice) public onlyOwner{
         if(_tokenPrice<=0) {
          revert AmountCannotBeZero();
